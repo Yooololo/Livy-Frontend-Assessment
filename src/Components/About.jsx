@@ -20,6 +20,8 @@ export default function About() {
             <a
               className="aboutlink"
               href="https://github.com/Yooololo/Livy-Frontend-Assessment"
+              target="_blank"
+              rel="noreferrer"
             >
               https://github.com/Yooololo/Livy-Frontend-Assessment
             </a>
