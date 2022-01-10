@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { GiCastle } from "react-icons/gi";
+// import { GiCastle } from "react-icons/gi";
 import "../Sass/Styles/Landing.scss";
 import { getGnomes } from "../Actions/actions.js";
 import { useDispatch } from "react-redux";
@@ -22,7 +22,8 @@ export default function Landing() {
           <p>
             <Link to="/home">
               <button className="landingbutton">
-                <GiCastle /> Enter City's Gnome Census <GiCastle />
+                {/* <GiCastle /> */}
+                Enter City's Gnome Census <GiCastle />
               </button>
             </Link>
           </p>
