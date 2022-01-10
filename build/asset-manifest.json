@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91121709.css",
+    "main.js": "/static/js/main.79053fc2.js",
+    "static/js/377.28ae5a7a.chunk.js": "/static/js/377.28ae5a7a.chunk.js",
+    "static/media/Castle.jpg": "/static/media/Castle.8d28641a4e5bf9ad470e.jpg",
+    "static/media/Town.jpg": "/static/media/Town.559e8821546da9316427.jpg",
+    "static/media/StoneWall.jpg": "/static/media/StoneWall.e6913fb133c0a0da2da9.jpg",
+    "static/media/FirePlace.jpg": "/static/media/FirePlace.a27832e1b3a720c60a74.jpg",
+    "static/media/Home.jpg": "/static/media/Home.bca192c7a5bb4a7ba37e.jpg",
+    "index.html": "/index.html",
+    "main.91121709.css.map": "/static/css/main.91121709.css.map",
+    "main.79053fc2.js.map": "/static/js/main.79053fc2.js.map",
+    "377.28ae5a7a.chunk.js.map": "/static/js/377.28ae5a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91121709.css",
+    "static/js/main.79053fc2.js"
+  ]
+}
