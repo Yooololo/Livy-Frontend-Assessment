@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../Sass/Styles/GnomeDetail.scss";
-import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
-// import { GiFlame } from "react-icons/gi";
+import BsGenderMale from "react-icons/lib/bs/gendermale";
+import BsGenderFemale from "react-icons/lib/bs/genderfemale";
+import GiFlame from "react-icons/lib/gi/flame";
 import { getGnomes } from "../Actions/actions.js";
 
 export default function GnomeDetail() {
@@ -87,11 +88,11 @@ export default function GnomeDetail() {
                       className="gnomedetailhaircolorimage"
                       style={{ backgroundColor: gnomeDetail[0].hair_color }}
                     >
-                      {/* {gnomeDetail[0].hair_color === "Black" ? (
+                      {gnomeDetail[0].hair_color === "Black" ? (
                         <GiFlame style={{ color: "white" }} />
                       ) : (
                         <GiFlame style={{ color: "black" }} />
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
