@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { GiCastle } from "react-icons/gi";
+import { GiCastle } from "react-icons/gi/castle";
 import "../Sass/Styles/Landing.scss";
 import { getGnomes } from "../Actions/actions.js";
 import { useDispatch } from "react-redux";
