@@ -5,7 +5,7 @@ import {
   searchGnomeName,
   searchGnomeId,
 } from "../Actions/actions.js";
-import { BiSearchAlt2 } from "react-icons/bi/searchalt2";
+import { BiSearchAlt2 } from "react-icons/bi";
 import "../Sass/Styles/SearchBar.scss";
 import { Link } from "react-router-dom";
 

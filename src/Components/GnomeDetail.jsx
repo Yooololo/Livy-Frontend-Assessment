@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../Sass/Styles/GnomeDetail.scss";
-import { BsGenderMale } from "react-icons/bs/gendermale";
-import { BsGenderFemale } from "react-icons/bs/genderfemale";
-import { GiFlame } from "react-icons/gi/flame";
+import { BsGenderMale } from "react-icons/bs";
+import { BsGenderFemale } from "react-icons/bs";
+import { GiFlame } from "react-icons/gi";
 import { getGnomes } from "../Actions/actions.js";
 
 export default function GnomeDetail() {
