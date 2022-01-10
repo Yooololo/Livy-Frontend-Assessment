@@ -30,10 +30,10 @@ export default function GnomeDetail() {
       nombre[0].slice(-1) === "e" ||
       nombre[0].slice(-1) === "i"
     ) {
-      return F;
+      return <>F</>;
       // </div><BsGenderFemale className="femaleGender" />;
     }
-    return M;
+    return <>M</>;
     // <BsGenderMale className="maleGender" />;
   }
 
