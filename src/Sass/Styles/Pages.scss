@@ -1,0 +1,125 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .pagespages {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 0;
+    margin: 1vw 0;
+    width: 60vw;
+    padding-left: 19vw;
+  }
+
+  .pagespage {
+    list-style-type: none;
+  }
+
+  .pagesbuttons {
+    background-color: transparent;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    padding: 0;
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    width: 1.75vw;
+    height: 1.75vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+  }
+
+  .pagesbuttons.active {
+    font-weight: bolder;
+    background-color: $musgo;
+    color: white;
+  }
+
+  .pagesbuttons:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .pagesbuttons:focus {
+    outline: none;
+  }
+
+  .pagesorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .pagespages {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 0;
+    margin: 2vw 0;
+    width: 100vw;
+  }
+
+  .pagespage {
+    list-style-type: none;
+  }
+
+  .pagesbuttons {
+    background-color: transparent;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    padding: 0;
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    width: 8vw;
+    height: 8vw;
+    font-size: 6vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+  }
+
+  .pagesbuttons.active {
+    font-weight: bolder;
+    background-color: $musgo;
+    color: white;
+  }
+
+  .pagesbuttons:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .pagesbuttons:focus {
+    outline: none;
+  }
+
+  .pagesorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+}

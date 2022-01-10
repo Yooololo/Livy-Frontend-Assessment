@@ -1,0 +1,152 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .gnomesname {
+    text-decoration: none;
+    color: $marron;
+    font-size: 1.1vw;
+    margin: 0;
+  }
+
+  .gnomesage {
+    text-decoration: none;
+    color: $marron;
+    font-size: 0.9vw;
+    margin: 0;
+  }
+
+  .gnomesimage {
+    width: 2.75vw;
+    height: 2.75vw;
+    border-radius: 50%;
+    border: 2px solid $marron;
+    margin: 0 1rem;
+  }
+
+  .gnomesdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .gnomescontainer {
+    border: 2px solid $marron;
+    border-radius: 20px;
+    width: 18vw;
+    height: 3.25vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    justify-items: center;
+    background-color: $naranjin;
+  }
+
+  .gnomescontainer:hover {
+    background-color: $azul;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gnomesname {
+    text-decoration: none;
+    color: $marron;
+    font-size: 7vw;
+    margin: 0;
+  }
+
+  .gnomesage {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .gnomesimage {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .gnomesdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gnomescontainer {
+    border: 2px solid $marron;
+    border-radius: 20px;
+    width: 85vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: $naranjin;
+    margin: 0;
+  }
+
+  .gnomescontainer:hover {
+    background-color: $azul;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .gnomesname {
+    text-decoration: none;
+    color: $marron;
+    font-size: 3.65vw;
+    margin: 0;
+  }
+
+  .gnomesage {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .gnomesimage {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .gnomesdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gnomescontainer {
+    border: 2px solid $marron;
+    border-radius: 20px;
+    width: 48vw;
+    height: auto;
+    padding: 0.5vw 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: $naranjin;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .gnomescontainer:hover {
+    background-color: $azul;
+  }
+}

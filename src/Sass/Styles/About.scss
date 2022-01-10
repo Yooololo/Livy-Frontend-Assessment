@@ -1,0 +1,313 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .aboutcontainer {
+    width: 98vw;
+    height: 96vh;
+    margin: 2vh 1vw;
+    top: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: solid $marron 2px;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .abouttodo {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center center;
+    backdrop-filter: blur(3px);
+  }
+
+  .aboutbackground {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.25px);
+    background-color: $naranjin;
+  }
+
+  .aboutlinkhome {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .aboutlink:focus {
+    outline: none;
+  }
+
+  .abouttitulo {
+    border-radius: 20px;
+    font-size: 1.75vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: auto;
+    max-width: 80vw;
+    height: auto;
+    padding: 1rem;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutboton {
+    border-radius: 20px;
+    font-size: 1.1vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: 9vw;
+    height: 2.5vw;
+    background-color: $azul;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 3rem 0rem;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $marron;
+    font-family: MedievalSharp;
+  }
+
+  .aboutboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .aboutboton:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .aboutbackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .abouttodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .aboutcontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutlinkhome {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .aboutlink:focus {
+    outline: none;
+  }
+
+  .abouttitulo {
+    border-radius: 20px;
+    font-size: 8vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: auto;
+    max-width: 80vw;
+    height: auto;
+    padding: 0.5rem;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $marron;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .aboutboton {
+    border-radius: 20px;
+    font-size: 7vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    background-color: $azul;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 2rem 0rem;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: $marron;
+    font-family: MedievalSharp;
+  }
+
+  .aboutboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .aboutboton:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .aboutbackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .abouttodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .aboutcontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutlinkhome {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink {
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .aboutlink:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .aboutlink:focus {
+    outline: none;
+  }
+
+  .abouttitulo {
+    border-radius: 20px;
+    font-size: 6.5vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: auto;
+    max-width: 80vw;
+    height: auto;
+    padding: 0.5rem;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $marron;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .aboutboton {
+    border-radius: 20px;
+    font-size: 7vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    background-color: $azul;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 2rem 0rem;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: $marron;
+    font-family: MedievalSharp;
+  }
+
+  .aboutboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .aboutboton:focus {
+    outline: none;
+  }
+}

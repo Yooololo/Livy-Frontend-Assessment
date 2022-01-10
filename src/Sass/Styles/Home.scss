@@ -1,0 +1,237 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .homecontainer {
+    width: 98vw;
+    height: 96vh;
+    margin: 2vh 1vw;
+    top: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: solid $marron 2px;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center center;
+  }
+
+  .hometodo {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-image: url("../Styles/Variables/Town.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center center;
+    backdrop-filter: blur(3px);
+  }
+
+  .homebackground {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.25px);
+    background-color: $naranjin;
+  }
+
+  .homegnomes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    text-decoration: none;
+    margin: 0 1vw;
+    margin-top: 1vw;
+    padding: 0 0;
+    align-items: center;
+  }
+
+  .homegnomes:focus {
+    outline: none;
+  }
+
+  .homelink {
+    text-decoration: none;
+  }
+
+  .homelink:focus {
+    outline: none;
+  }
+
+  .homenognomes {
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $marron;
+    height: 2vw;
+    width: 45vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    color: $marron;
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    margin-left: 25vw;
+    margin-top: 3vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .homebackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hometodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .homecontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/StoneWall.jpg");
+    background-color: $musgo;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .homegnomes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    text-decoration: none;
+    margin: 0 1vw;
+    margin-top: 0.5vw;
+    padding: 0 0;
+    align-items: center;
+  }
+
+  .homegnomes:focus {
+    outline: none;
+  }
+
+  .homelink {
+    text-decoration: none;
+  }
+
+  .homelink:focus {
+    outline: none;
+  }
+
+  .homenognomes {
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $marron;
+    height: 5vw;
+    width: 45vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    color: $marron;
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    margin-left: 25vw;
+    margin-top: 3vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .homebackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hometodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .homecontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/StoneWall.jpg");
+    background-color: $musgo;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homegnomes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    text-decoration: none;
+    padding: 0 0;
+    align-items: center;
+    align-content: center;
+    height: 35vh;
+  }
+
+  .homegnomes:focus {
+    outline: none;
+  }
+
+  .homelink {
+    text-decoration: none;
+  }
+
+  .homelink:focus {
+    outline: none;
+  }
+
+  .homenognomes {
+    justify-content: center;
+    text-align: center;
+    font-size: 8vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $marron;
+    height: 20vw;
+    width: 90vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    color: $marron;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .homeeachgnome {
+    margin: 0;
+  }
+}

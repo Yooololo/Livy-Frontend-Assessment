@@ -1,0 +1,197 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (max-width: 767px) {
+  .pagesmobilepages {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+    margin: 1vw 0;
+    width: 100vw;
+  }
+
+  .pagesmobilepagesorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .pagesmobilepage {
+    list-style-type: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    margin: 0.5vw 0.25vw;
+    padding: 0.25vw;
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    width: auto;
+    min-width: 8vw;
+    height: 7vw;
+    font-size: 4.5vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .pagesmobilepage.active {
+    font-weight: bolder;
+    background-color: $musgo;
+    color: white;
+  }
+
+  .pagemobileprevnext {
+    list-style-type: none;
+    padding: 1vw;
+  }
+
+  .pagesmobileorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .pagesmobileprevnextbuttons {
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    padding: 1vw 2vw;
+    width: auto;
+    height: 10vw;
+    font-size: 5vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+    margin-bottom: 0;
+  }
+
+  .pagesmobileprevnextbuttons.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+  .pagesmobileprevnextbuttons:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .pagesmobilepages {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+    margin: 1vw 0;
+    width: 100vw;
+  }
+
+  .pagesmobilepagesorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .pagesmobilepage {
+    list-style-type: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    margin: 0.5vw 0.25vw;
+    padding: 0.25vw;
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    width: auto;
+    min-width: 5vw;
+    height: 4vw;
+    font-size: 3vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .pagesmobilepage.active {
+    font-weight: bolder;
+    background-color: $musgo;
+    color: white;
+  }
+
+  .pagemobileprevnext {
+    list-style-type: none;
+    padding: 1vw;
+  }
+
+  .pagesmobileorder {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .pagesmobileprevnextbuttons {
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    padding: 1vw 2vw;
+    width: auto;
+    height: 5.5vw;
+    font-size: 3vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+    margin-bottom: 0;
+  }
+
+  .pagesmobileprevnextbuttons.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+  .pagesmobileprevnextbuttons:focus {
+    outline: none;
+  }
+}

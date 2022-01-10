@@ -1,0 +1,682 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .gnomedetailcontainer {
+    width: 98vw;
+    height: 96vh;
+    margin: 2vh 1vw;
+    top: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: solid $marron 1px;
+    background-image: url("../Styles/Variables/Home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gnomedetailtodo {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .gnomedetailbackground {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.25px);
+    background-color: $naranjin;
+  }
+
+  .gnomedetaildata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+  }
+
+  .gnomedetailcuadrado {
+    width: 30vw;
+    height: 82vh;
+    border: 2px solid $azul;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    background-color: $naranjin;
+    margin: 0 1vw;
+  }
+
+  .gnomedetailimage {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin: 0.5vw;
+    border: 2px solid $azul;
+    margin-top: 1vw;
+  }
+
+  .gnomedetailnamegender {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailage {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailid {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailweight {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailheight {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailhaircolorimage {
+    border-radius: 50%;
+    width: min-content;
+    height: min-content;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    border: solid $azul 2px;
+  }
+
+  .gnomedetailhaircolor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailprofression {
+    font-size: 1.75vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 1vw 0;
+    text-decoration: none;
+  }
+
+  .gnomedetaileachprofression {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailfriend {
+    font-size: 1.75vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 1vw 0;
+    text-decoration: none;
+  }
+
+  .gnomedetaileachfriend {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetaileachfriend:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .gnomedetaileachnofriend {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+  }
+
+  .gnomedetailboton {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-size: 1.25vw;
+    margin: 0 2vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $azul;
+    height: 2.5vw;
+    font-weight: bold;
+    width: 5vw;
+    font-family: MedievalSharp;
+  }
+
+  .gnomedetailboton:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+  }
+
+  .gnomedetailbuttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gnomedetailbackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .gnomedetailtodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .gnomedetailcontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/FirePlace.jpg");
+    background-color: $musgo;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gnomedetaildata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gnomedetailcuadrado {
+    width: 90vw;
+    min-width: 50vw;
+    height: auto;
+    border: 2px solid $azul;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: $naranjin;
+    margin: 1vh 5vw;
+  }
+
+  .gnomedetailimage {
+    width: 45vw;
+    height: 45vw;
+    border-radius: 25%;
+    margin: 0.5vw;
+    border: 2px solid $azul;
+    margin-top: 1vw;
+  }
+
+  .gnomedetailnamegender {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailage {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailid {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailweight {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailheight {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailhaircolorimage {
+    border-radius: 50%;
+    width: min-content;
+    height: min-content;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    border: solid $azul 2px;
+  }
+
+  .gnomedetailhaircolor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailprofression {
+    font-size: 6vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 0.5vw 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gnomedetaileachprofression {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin: 0.5vw 1vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .gnomedetailfriend {
+    font-size: 6vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 0.5vw 0;
+    text-decoration: none;
+  }
+
+  .gnomedetaileachfriend {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin: 0.5vw 1vw;
+  }
+
+  .gnomedetaileachfriend:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .gnomedetaileachnofriend {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.25vw;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+  }
+
+  .gnomedetailboton {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-size: 6vw;
+    margin: 0 2vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $azul;
+    height: 10vw;
+    font-weight: bold;
+    width: 35vw;
+    font-family: MedievalSharp;
+  }
+
+  .gnomedetailboton:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+  }
+
+  .gnomedetailbuttons {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+  }
+
+  .gnomedetailprofessions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gnomedetailbackground {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .gnomedetailtodo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .gnomedetailcontainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Styles/Variables/FirePlace.jpg");
+    background-color: $musgo;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gnomedetaildata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gnomedetailcuadrado {
+    width: 90vw;
+    min-width: 50vw;
+    height: auto;
+    border: 2px solid $azul;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: $naranjin;
+    margin: 0.5vh 5vw;
+  }
+
+  .gnomedetailimage {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15%;
+    margin: 0.5vw;
+    border: 2px solid $azul;
+    margin-top: 1vw;
+  }
+
+  .gnomedetailnamegender {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailage {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailid {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailweight {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailheight {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailhaircolorimage {
+    border-radius: 50%;
+    width: min-content;
+    height: min-content;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    border: solid $azul 2px;
+  }
+
+  .gnomedetailhaircolor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.75vw;
+  }
+
+  .gnomedetailprofression {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 0.5vw 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gnomedetaileachprofression {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin: 0.5vw 1vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .gnomedetailfriend {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: $marron;
+    text-align: center;
+    margin: 0.5vw 0;
+    text-decoration: none;
+  }
+
+  .gnomedetaileachfriend {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin: 0.5vw 1vw;
+  }
+
+  .gnomedetaileachfriend:hover {
+    color: $azul;
+    text-decoration: underline;
+  }
+
+  .gnomedetaileachnofriend {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-top: 0.25vw;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+  }
+
+  .gnomedetailboton {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-size: 4vw;
+    margin: 0 2vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 1px solid $azul;
+    height: 6vw;
+    font-weight: bold;
+    width: 35vw;
+    font-family: MedievalSharp;
+  }
+
+  .gnomedetailboton:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .gnomedetaillink {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .gnomedetailbuttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 7vh;
+  }
+
+  .gnomedetailprofessions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gnomedetailinfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

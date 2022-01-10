@@ -1,0 +1,403 @@
+@import "./Variables/Variables.scss";
+
+@media only screen and (min-width: 1024px) {
+  .searchbarsearchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .searchbarbusquedas + .searchbarbusquedas {
+    margin-left: 10vw;
+  }
+
+  .searchbarinput {
+    justify-content: center;
+    text-align: center;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    height: 2vw;
+    width: 12vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    color: $marron;
+  }
+
+  .searchbarinput::placeholder {
+    color: $marron75;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+  }
+
+  .searchbarinput:focus {
+    outline: none;
+  }
+
+  .searchbarboton {
+    border-radius: 20px;
+    font-size: 1.5vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    width: 2.3vw;
+    height: 2.3vw;
+    background-color: $azul;
+    color: $marron;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 0;
+    display: flex;
+  }
+
+  .searchbarboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .searchbarboton:focus {
+    outline: none;
+  }
+
+  .searchbarabout {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    height: 2vw;
+    font-weight: bold;
+    width: 5vw;
+    display: flex;
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .searchbarabout:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarabout:focus {
+    outline: none;
+  }
+
+  .searchbarlanding {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    height: 2vw;
+    font-weight: bold;
+    width: 5vw;
+    text-decoration: none;
+    color: $marron;
+  }
+
+  .searchbarlanding:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarlanding:focus {
+    outline: none;
+  }
+
+  .searchbarbusquedas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbarreset {
+    border-radius: 20px;
+    font-size: 1.1vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    width: 10vw;
+    height: 2.3vw;
+    background-color: $azul;
+    color: $marron;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  .searchbarreset:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .searchbarreset:focus {
+    outline: none;
+  }
+
+  .searchbarsearchbars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .searchbarsearchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .searchbarinput {
+    justify-content: center;
+    text-align: center;
+    font-size: 5.5vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    height: auto;
+    width: 80vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    padding: 0.5vw 0;
+    color: $marron;
+    margin: 0.5vw 0.5vw 0.5vw 0;
+  }
+
+  .searchbarinput::placeholder {
+    color: $marron75;
+    font-size: 5.5vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+  }
+
+  .searchbarinput:focus {
+    outline: none;
+  }
+
+  .searchbarboton {
+    border-radius: 20px;
+    font-size: 6vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: $azul;
+    color: $marron;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 0;
+    display: flex;
+  }
+
+  .searchbarboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .searchbarboton:focus {
+    outline: none;
+  }
+
+  .searchbarabout {
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    margin-top: 1vw;
+    padding: 1vw 3vw;
+    width: auto;
+    height: auto;
+    font-size: 5vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+  }
+
+  .searchbarabout:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarabout:focus {
+    outline: none;
+  }
+
+  .searchbarlanding {
+    display: none;
+  }
+
+  .searchbarlanding:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarlanding:focus {
+    outline: none;
+  }
+
+  .searchbarbusquedas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbarsearchbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .searchbarsearchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .searchbarinput {
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5vw;
+    border-radius: 20px;
+    background-color: $naranjin;
+    border: 2px solid $marron;
+    height: auto;
+    width: 80vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+    padding: 0.5vw 0;
+    color: $marron;
+    margin: 0.5vw 0.5vw 0.5vw 0;
+  }
+
+  .searchbarinput::placeholder {
+    color: $marron75;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-family: MedievalSharp;
+  }
+
+  .searchbarinput:focus {
+    outline: none;
+  }
+
+  .searchbarboton {
+    border-radius: 20px;
+    font-size: 4.5vw;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: $azul;
+    color: $marron;
+    border: 2px solid $marron;
+    font-weight: bolder;
+    margin: 0;
+    display: flex;
+  }
+
+  .searchbarboton:hover {
+    background-color: $naranjin;
+    cursor: pointer;
+  }
+
+  .searchbarboton:focus {
+    outline: none;
+  }
+
+  .searchbarabout {
+    border: 2px solid $marron;
+    background-color: $naranjin;
+    cursor: pointer;
+    color: $marron;
+    text-decoration: none;
+    display: inline;
+    margin: 0.5vw 0.25vw;
+    margin-top: 1vw;
+    padding: 1vw 3vw;
+    width: auto;
+    height: auto;
+    font-size: 3vw;
+    font-weight: bolder;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: MedievalSharp;
+  }
+
+  .searchbarabout:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarabout:focus {
+    outline: none;
+  }
+
+  .searchbarlanding {
+    display: none;
+  }
+
+  .searchbarlanding:hover {
+    background-color: $azul;
+    cursor: pointer;
+  }
+
+  .searchbarlanding:focus {
+    outline: none;
+  }
+
+  .searchbarbusquedas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbarsearchbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
