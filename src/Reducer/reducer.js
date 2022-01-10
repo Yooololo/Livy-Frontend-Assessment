@@ -5,8 +5,6 @@ const initialState = {
 };
 
 export default function reducer(state = initialState, action) {
-  const gnomes = state.gnomes;
-  const allGnomes = state.allGnomes;
   switch (action.type) {
     case "GET_GNOMES":
       return {

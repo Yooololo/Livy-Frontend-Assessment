@@ -27,7 +27,9 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
           id={number}
           onClick={handleClick}
           className={
-            currentPage == number ? "pagesmobilepage active" : "pagesmobilepage"
+            currentPage === number
+              ? "pagesmobilepage active"
+              : "pagesmobilepage"
           }
         >
           {number}
@@ -52,7 +54,7 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
     setcurrentPage(currentPage - 1);
     paginado(currentPage - 1);
 
-    if ((currentPage - 1) % pageNumberLimit == 0) {
+    if ((currentPage - 1) % pageNumberLimit === 0) {
       setmaxPageNumberLimit(maxPageNumberLimit - pageNumberLimit);
       setminPageNumberLimit(minPageNumberLimit - pageNumberLimit);
     }
@@ -81,12 +83,12 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
           <li className="pagemobileprevnext">
             <button
               className={
-                currentPage == pages[0]
+                currentPage === pages[0]
                   ? "pagesmobileprevnextbuttons disabled"
                   : "pagesmobileprevnextbuttons"
               }
               onClick={handlePrevbtn}
-              disabled={currentPage == pages[0] ? true : false}
+              disabled={currentPage === pages[0] ? true : false}
             >
               Prev
             </button>
@@ -96,12 +98,12 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
           <li className="pagemobileprevnext">
             <button
               className={
-                currentPage == pages[pages.length - 1]
+                currentPage === pages[pages.length - 1]
                   ? "pagesmobileprevnextbuttons disabled"
                   : "pagesmobileprevnextbuttons"
               }
               onClick={handleNextbtn}
-              disabled={currentPage == pages[pages.length - 1] ? true : false}
+              disabled={currentPage === pages[pages.length - 1] ? true : false}
             >
               Next
             </button>
@@ -112,12 +114,12 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
           <li className="pagemobileprevnext">
             <button
               className={
-                currentPage == pages[0]
+                currentPage === pages[0]
                   ? "pagesmobileprevnextbuttons disabled"
                   : "pagesmobileprevnextbuttons"
               }
               onClick={handleFirstbtn}
-              disabled={currentPage == pages[0] ? true : false}
+              disabled={currentPage === pages[0] ? true : false}
             >
               First
             </button>
@@ -126,12 +128,12 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
           <li className="pagemobileprevnext">
             <button
               className={
-                currentPage == pages[pages.length - 1]
+                currentPage === pages[pages.length - 1]
                   ? "pagesmobileprevnextbuttons disabled"
                   : "pagesmobileprevnextbuttons"
               }
               onClick={handleLastbtn}
-              disabled={currentPage == pages[pages.length - 1] ? true : false}
+              disabled={currentPage === pages[pages.length - 1] ? true : false}
             >
               Last
             </button>

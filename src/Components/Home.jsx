@@ -42,7 +42,9 @@ export default function Home() {
     if (current.length > 0) {
       current[0].className = current[0].className.replace(" active", "");
     }
-    gnomosPorPagina === 35 && (boton1.className += " active");
+    gnomosPorPagina === 35 &&
+      boton1 !== null &&
+      (boton1.className += " active");
   }
 
   useEffect(() => {

@@ -25,6 +25,7 @@ export function searchGnomeName(name) {
       const gnome = response.data;
       const gnomo = gnome.Brastlewark;
       const gnomos = [];
+      //eslint-disable-next-line
       gnomo.filter((gnome) => {
         if (gnome.name.toLowerCase().includes(name.toLowerCase())) {
           gnomos.push(gnome);
@@ -72,6 +73,7 @@ export function filterGnomesByProfession(profession) {
       const gnome = response.data;
       const gnomo = gnome.Brastlewark;
       const gnomos = [];
+      //eslint-disable-next-line
       gnomo.filter((gnome) => {
         if (gnome.professions.includes(profession)) {
           gnomos.push(gnome);
@@ -96,6 +98,7 @@ export function filterGnomesByAge(minage, maxage) {
       const gnome = response.data;
       const gnomo = gnome.Brastlewark;
       const gnomos = [];
+      //eslint-disable-next-line
       gnomo.filter((gnome) => {
         if (gnome.age >= minage && gnome.age <= maxage) {
           gnomos.push(gnome);
@@ -121,6 +124,7 @@ export function filterGnomesByHeight(minheight, maxheight) {
       const gnome = response.data;
       const gnomo = gnome.Brastlewark;
       const gnomos = [];
+      //eslint-disable-next-line
       gnomo.filter((gnome) => {
         if (gnome.height >= minheight && gnome.height <= maxheight) {
           gnomos.push(gnome);
@@ -146,6 +150,7 @@ export function filterGnomesByWeight(minweight, maxweight) {
       const gnome = response.data;
       const gnomo = gnome.Brastlewark;
       const gnomos = [];
+      //eslint-disable-next-line
       gnomo.filter((gnome) => {
         if (gnome.weight >= minweight && gnome.weight <= maxweight) {
           gnomos.push(gnome);

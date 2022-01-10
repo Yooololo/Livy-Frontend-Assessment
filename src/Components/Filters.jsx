@@ -17,7 +17,9 @@ export default function Filters({ paginado }) {
   const profesiones = [];
   gnomos &&
     gnomos.length &&
+    //eslint-disable-next-line
     gnomos.map((gnomo) => {
+      //eslint-disable-next-line
       gnomo.professions.map((profesion) => {
         profesiones.push(profesion);
       });
