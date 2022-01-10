@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../Sass/Styles/GnomeDetail.scss";
-import { BsGenderMale } from "react-icons/bs";
-import { BsGenderFemale } from "react-icons/bs";
-import { GiFlame } from "react-icons/gi";
+// import { BsGenderMale } from "react-icons/bs";
+// import { BsGenderFemale } from "react-icons/bs";
+// import { GiFlame } from "react-icons/gi";
 import { getGnomes } from "../Actions/actions.js";
 
 export default function GnomeDetail() {
@@ -30,9 +30,11 @@ export default function GnomeDetail() {
       nombre[0].slice(-1) === "e" ||
       nombre[0].slice(-1) === "i"
     ) {
-      return <BsGenderFemale className="femaleGender" />;
+      return <div>F</div>;
+      // </div><BsGenderFemale className="femaleGender" />;
     }
-    return <BsGenderMale className="maleGender" />;
+    return <div>M</div>;
+    // <BsGenderMale className="maleGender" />;
   }
 
   function findFriendId(friend) {
@@ -88,11 +90,11 @@ export default function GnomeDetail() {
                       className="gnomedetailhaircolorimage"
                       style={{ backgroundColor: gnomeDetail[0].hair_color }}
                     >
-                      {gnomeDetail[0].hair_color === "Black" ? (
+                      {/* {gnomeDetail[0].hair_color === "Black" ? (
                         <GiFlame style={{ color: "white" }} />
                       ) : (
                         <GiFlame style={{ color: "black" }} />
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>

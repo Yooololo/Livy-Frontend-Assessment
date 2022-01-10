@@ -5,7 +5,7 @@ import {
   searchGnomeName,
   searchGnomeId,
 } from "../Actions/actions.js";
-import { BiSearchAlt2 } from "react-icons/bi";
+// import { BiSearchAlt2 } from "react-icons/bi";
 import "../Sass/Styles/SearchBar.scss";
 import { Link } from "react-router-dom";
 
@@ -63,7 +63,7 @@ export default function SearchBar() {
               type="submit"
               onClick={(e) => handleSubmitName(e)}
             >
-              <BiSearchAlt2 />
+              Go{/* <BiSearchAlt2 /> */}
             </button>
           </div>
           <div className="searchbarbusquedas">
