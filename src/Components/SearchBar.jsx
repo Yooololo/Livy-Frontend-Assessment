@@ -79,7 +79,7 @@ export default function SearchBar() {
               type="submit"
               onClick={(e) => handleSubmitId(e)}
             >
-              <BiSearchAlt2 />
+              Go{/* <BiSearchAlt2 /> */}
             </button>
           </div>
         </div>
