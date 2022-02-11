@@ -1,19 +1,29 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "../Sass/Styles/Home.scss";
-import { getGnomes } from "../Actions/actions.js";
 import Pages from "./Pages.jsx";
 import PagesMobile from "./PagesMobile.jsx";
 import Gnomes from "./Gnomes.jsx";
 import SearchBar from "./SearchBar.jsx";
 import Filters from "./Filters.jsx";
+import ResizeObserver from "resize-observer-polyfill";
 
 export default function Home() {
   let screenWidth = window.innerWidth;
   let gnomosPorPagina = screenWidth >= 1024 ? 35 : screenWidth >= 768 ? 10 : 5;
-  const dispatch = useDispatch();
+  const dispInit = screenWidth;
+  let resizeObserver = new ResizeObserver(() => {
+    screenWidth = window.innerWidth;
+    if (dispInit >= 1024 && screenWidth < 1024) {
+      window.location.reload();
+    } else if (dispInit < 1024 && screenWidth >= 1024) {
+      window.location.reload();
+    }
+  });
+  resizeObserver.observe(document.body);
+
   const gnomes = useSelector((state) => state.gnomes);
   const [currentPage, setCurrentPage] = useState(1);
   const [gnomesPerPage, setGnomesPerPage] = useState(gnomosPorPagina); //eslint-disable-line
@@ -46,11 +56,6 @@ export default function Home() {
       boton1 !== null &&
       (boton1.className += " active");
   }
-
-  useEffect(() => {
-    dispatch(getGnomes());
-    // eslint-disable-next-line
-  }, []);
 
   return (
     <div className="hometodo">

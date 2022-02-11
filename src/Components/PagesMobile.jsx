@@ -21,6 +21,7 @@ export default function PagesMobile({ gnomesPerPage, gnomes = [], paginado }) {
 
   const renderPageNumbers = pages.map((number) => {
     if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
+      console.log(currentPage);
       return (
         <li
           key={number}
