@@ -44,19 +44,19 @@ export default function Home() {
     setCurrentPage(pageNumber);
   };
 
-  // let id1 =
-  //   gnomes && gnomos && gnomos.length && gnomos[0] && currentGnomes[0].id;
+  let id1 =
+    gnomes && gnomos && gnomos.length && gnomos[0] && currentGnomes[0].id;
 
-  // if (id1 === 0) {
-  //   let current = document.getElementsByClassName("active");
-  //   if (current.length > 0) {
-  //     current[0].className = current[0].className.replace(" active", "");
-  //   }
-  //   gnomosPorPagina === 35 &&
-  //     screenWidth >= 1024 &&
-  //     boton1 !== null &&
-  //     (boton1.className += " active");
-  // }
+  if (id1 === 0) {
+    let current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    gnomosPorPagina === 35 &&
+      screenWidth >= 1024 &&
+      boton1 !== null &&
+      (boton1.className += " active");
+  }
 
   return (
     <div className="hometodo">

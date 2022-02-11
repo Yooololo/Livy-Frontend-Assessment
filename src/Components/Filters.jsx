@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../Sass/Styles/Filters.scss";
 import { useDispatch, useSelector } from "react-redux";
 import {
