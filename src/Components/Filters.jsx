@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Sass/Styles/Filters.scss";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -13,7 +13,6 @@ export default function Filters({ paginado }) {
   const dispatch = useDispatch();
   const gnomes = useSelector((state) => state.allGnomes);
   const gnomos = gnomes.Brastlewark;
-
   const profesiones = [];
   gnomos &&
     gnomos.length &&
@@ -107,9 +106,9 @@ export default function Filters({ paginado }) {
         <div className="filterseachfilter">
           <p className="filtersfilter">Filter by Profession</p>
           <select
+            id="profSelect"
             className="filtersselect"
             onChange={(e) => handleFilterProfession(e)}
-            defaultValue="All"
           >
             <option className="filtersoption" value="All">
               All
